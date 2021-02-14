@@ -1,5 +1,5 @@
 ---
-title: "R Notebook"
+title: "Agile Notes"
 output:
   html_document:
     df_print: paged
@@ -7,18 +7,27 @@ bibliography: bibliography.bib
 link-citations: true
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code [@cohn2005agile]. 
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
-```{r}
-plot(cars)
-```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+# Agile Notes
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+## Planen
+### Warum planen?
+<!-- TODO Investition und Finanzierung Fachbuch: Wann ist eine Investition rentabel? -->
+Planen ist aufwendig und führt doch nicht zu den gewünschten Ergebnissen. Warum dann überhaupt planen? 
+[@cohn2005agile, 33]
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+#### The cone of uncertanty
+
+>The cone of uncertainty shows that during the feasibility phase of
+a project a schedule estimate is typically as far off as 60% to 160%. That is, a
+project expected to take 20 weeks could take anywhere from 12 to 32 weeks. Af-
+ter the requirements are written, the estimate might still be off +/- 15% in either
+direction. So an estimate of 20 weeks means work that takes 17 to 23 weeks. 
+
+[@cohn2005agile, 4]
+
+## Schätzen
 
 # References
