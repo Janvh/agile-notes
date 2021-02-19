@@ -7,6 +7,11 @@ bibliography: bibliography.bib
 link-citations: true
 ---
 
+```{r load packes, include=FALSE}
+
+library(tidyverse)
+
+```
 
 
 
@@ -15,10 +20,10 @@ link-citations: true
 ## Planen
 ### Warum planen?
 <!-- TODO Investition und Finanzierung Fachbuch: Wann ist eine Investition rentabel? -->
-Planen ist aufwendig und führt doch nicht zu den gewünschten Ergebnissen. Warum dann überhaupt planen? 
-[@cohn2005agile, 33]
+Planen ist aufwendig und führt doch nicht zu den gewünschten Ergebnissen. Warum dann überhaupt planen?
 
 #### The cone of uncertanty
+Zeigt, dass Schätzen schwierig ist, Je früher im Prüject desto unsicherer die Schätzung
 
 >The cone of uncertainty shows that during the feasibility phase of
 a project a schedule estimate is typically as far off as 60% to 160%. That is, a
@@ -26,7 +31,44 @@ project expected to take 20 weeks could take anywhere from 12 to 32 weeks. Af-
 ter the requirements are written, the estimate might still be off +/- 15% in either
 direction. So an estimate of 20 weeks means work that takes 17 to 23 weeks. 
 
+
 [@cohn2005agile, 4]
+
+
+```{r con of uncertainty, echo=FALSE}
+coneOfUncertainty <- tibble(status = c("Innitial Product Definition", "Approved Product Definition", "Requirement Specification", "Product Design Specification", "Detailed Design Specification", "Accepted Software"),
+                            min = c(0.6, 0.8, 0.85, 0.9, 0.95, 1),
+                            max = c(1.6, 1.25, 1.15, 1.1, 1.05, 1)
+)
+
+coneOfUncertainty$status <- as.character(coneOfUncertainty$status)
+coneOfUncertainty$status <- factor(coneOfUncertainty$status, levels=unique(coneOfUncertainty$status))
+
+ggplot(coneOfUncertainty, mapping = aes(status, max)) +
+  geom_point() +
+  geom_point(aes(status, min)) +
+  theme(axis.text.x = element_text(angle = 45)) 
+  
+```
+
+### Gründe warum planen
+* Reducing risk
+* Reducing uncertainty
+* Supporting better decision making
+> Many of the decisions made while planning a project are > tradeoff decisions.
+> For example, on every project we make tradeoff decisions > between development
+> time and cost. Often the cheapest way to develop a system > would be to hire one
+> good programmer and allow her ten or twenty years to write > the system, allow-
+> ing her years of detouring to perhaps master the domain, > become an expert in
+> database administration, and so on. Obviously, though, we > can rarely wait twenty
+> years for a system, and so we engage teams. A team of thirty > may spend a year
+> (thirty person-years) developing what a lone programmer > could have done in
+> twenty. The development cost goes up, but the value of > having the application
+> nineteen years earlier justifies the increased cost.
+* Establishing trust
+* Conveying information
+
+[@cohn2005agile, 5]
 
 ## Schätzen
 
