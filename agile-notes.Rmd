@@ -53,18 +53,17 @@ ggplot(coneOfUncertainty, mapping = aes(status, max)) +
 
 ### Gründe warum planen
 * Reducing risk
+  - Risiken durch Planung aufdecken
+  - Die größten Risiken erkennen
+  - Entscheidungen aufgrund der Risiken treffen
 * Reducing uncertainty
+
+> Throughout a project, the team is generating new capabilities in the product. They are also generating new knowledge—about the product, the technologies in use, and themselves as a team. It is critical that this new knowledge be ac- knowledged and factored into an iterative planning process that is designed to help a team refine their vision of the product.
+
 * Supporting better decision making
-> Many of the decisions made while planning a project are > tradeoff decisions.
-> For example, on every project we make tradeoff decisions > between development
-> time and cost. Often the cheapest way to develop a system > would be to hire one
-> good programmer and allow her ten or twenty years to write > the system, allow-
-> ing her years of detouring to perhaps master the domain, > become an expert in
-> database administration, and so on. Obviously, though, we > can rarely wait twenty
-> years for a system, and so we engage teams. A team of thirty > may spend a year
-> (thirty person-years) developing what a lone programmer > could have done in
-> twenty. The development cost goes up, but the value of > having the application
-> nineteen years earlier justifies the increased cost.
+
+> Many of the decisions made while planning a project are tradeoff decisions. For example, on every project we make tradeoff decisions between development time and cost. Often the cheapest way to develop a system would be to hire one good programmer and allow her ten or twenty years to write the system, allow- ing her years of detouring to perhaps master the domain, become an expert in database administration, and so on. Obviously, though, we can rarely wait twenty years for a system, and so we engage teams. A team of thirty may spend a year (thirty person-years) developing what a lone programmer could have done in twenty. The development cost goes up, but the value of having the application nineteen years earlier justifies the increased cost.
+
 * Establishing trust
 * Conveying information
 
