@@ -69,6 +69,17 @@ ggplot(coneOfUncertainty, mapping = aes(status, max)) +
 
 [@cohn2005agile, 5]
 
+## Why planning fails
+> Work expands so as to fill the time available for its completion
+
+[@cohn2005agile, 12]
+
+### Activities are not independent
+> Many activities in a typical project plan are not independent, yet we contin- ually forget this. When someone is late on the first of a handful of similar items we’ve all heard or given the answer, “Yes, I was late this time, but I’ll make it up on the rest.” This stems from the belief that the knowledge gained from complet- ing the first activity will allow the remaining similar activities to be completed
+more quickly than called for in the plan. The real knowledge we should gain in a situation like this is that when an activity takes longer than planned, all similar activities are also likely to take longer than planned.
+
+[@cohn2005agile, 14]
+
 ## Schätzen
 
 # References
